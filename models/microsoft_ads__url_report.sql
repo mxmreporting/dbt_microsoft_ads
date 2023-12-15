@@ -2,7 +2,8 @@
     unique_key = ['source_relation','date_day','account_id','campaign_id','ad_group_id','ad_id','device_os','device_type','network','currency_code'],
     partition_by={
       "field": "date_day",
-      "data_type": "date"
+      "data_type": "date",
+      "granularity": "day"
     }
     ) }}
 
